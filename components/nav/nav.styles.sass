@@ -34,10 +34,10 @@
     padding: 0 10px
     height: 60px
     .name
+      z-index: 200
       font-size: 35px
     .navLinks
       z-index: -100
-      visibility: hidden
       opacity: 0
       transition: 0.9s all
       background-color: #e8e4dc
@@ -48,7 +48,7 @@
       bottom: 0
       left: 0
       width: 100vw
-      height: calc(100vh - 60px)
+      height: 100vh
       a
         transition: 0.3s all
         transform: translateY(100vh)
@@ -56,7 +56,6 @@
       .inst
         font-size: 30px
     .navLinksActive
-      visibility: visible
       z-index: 100
       display: flex
       opacity: 1
@@ -65,6 +64,7 @@
         transform: translateY(0)
         margin: 20px
     .hamburger
+      z-index: 200
       display: flex
       flex-direction: column
       justify-content: space-between

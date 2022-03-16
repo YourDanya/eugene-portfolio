@@ -37,11 +37,9 @@ const Nav: React.FC = () => {
     }
 
     return (
-        <nav className={`nav ${show? '' : 'hidden'}`}>
-            <div>
-                <p className={'name'}>Eugene Suhanov</p>
-            </div>
-            <div className={`navLinks ${hamburgerActive? 'navLinksActive' : ''  }`}>
+        <nav className={`nav ${show ? '' : 'hidden'}`}>
+            <p className={'name'}>Eugene Suhanov</p>
+            <div className={`navLinks ${hamburgerActive ? 'navLinksActive' : ''}`}>
                 <Link href="/">
                     <a className={'navLinks_home'} onClick={handleClick}>Home</a>
                 </Link>
@@ -55,9 +53,9 @@ const Nav: React.FC = () => {
                     <AiOutlineInstagram className={'inst'}/>
                 </a>
             </div>
-            <div className={`hamburger ${hamburgerActive? 'hamburgerActive' : ''}`}
-                onClick={handleClick}
-                >
+            <div className={`hamburger ${hamburgerActive ? 'hamburgerActive' : ''}`}
+                 onClick={handleClick}
+            >
                 <span className={'hamburger_line'}/>
                 <span className={'hamburger_line'}/>
                 <span className={'hamburger_line'}/>
