@@ -1,6 +1,7 @@
 import type {NextPage} from 'next'
 import Image from 'next/image'
 import styles from '../styles/Homu.module.sass'
+import main_img from './../public/main-img.jpg'
 import works_1 from './../public/works-1.jpg'
 import works_2 from './../public/works-2.jpg'
 import works_3 from './../public/works-3.jpg'
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
                     <div className={styles.imageWrapper}>
                         <Image
                             className={styles.aboutMe_img}
-                            src="/../public/main-img.jpg"
+                            src={main_img.src}
                             alt='main-img'
                             layout="fill"
                             objectFit="contain"
