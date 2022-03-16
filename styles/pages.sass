@@ -1,2 +1,87 @@
+.page
+  &_container
+    padding: 100px 100px 10px
+    display: flex
+    flex-direction: column
+  &_top
+    align-items: center
+    display: flex
+  &_line
+    height: 1px
+    flex-grow: 1
+    background-color: black
+  &_label
+    font-style: italic
+    font-size: 25px
+    margin: 0 3px 0 0
 .about
-  margin: 100px 0
+  &_title
+    margin: 30px 0
+    font-size: 35px
+  &_text
+    font-family: 'CormorantGaramond-Light', serif
+    font-size: 30px
+    margin-bottom: 30px
+.contact
+  &_text
+    margin: 50px 0
+    font-size: 40px
+    line-height: 50px
+  &_socials
+    margin-top: 50px
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    p,a
+      font-size: 20px
+    .inst
+      font-size: 25px
+
+@media (max-width: 1200px)
+  .page
+  .about
+  .contact
+    &_socials
+      width: 70%
+
+@media (max-width: 992px)
+  .page
+    &_container
+      padding: 80px 80px 0
+  .about
+    &_title
+      font-size: 30px
+    &_container
+      font-size: 30px
+  .contact
+    &_socials
+      width: 85%
+
+
+@media (max-width: 768px)
+  .page
+    &_container
+      padding: 100px 50px 20px
+  .about
+    //&_text
+    //  font-size: 20px
+  .contact
+    &_text
+      font-size: 30px
+    &_socials
+      width: 100%
+
+@media (max-width: 576px)
+  .page
+    &_container
+      padding: 100px 20px 20px
+  .about
+  .contact
+    &_text
+      font-size: 25px
+      line-height: 40px
+    &_socials
+      flex-direction: column
+      a, p
+        margin: 10px

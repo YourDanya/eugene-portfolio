@@ -1,87 +1,159 @@
 .container
-    padding: 10px 60px
-.nav
-    display: flex
-    justify-content: space-between
-    align-items: center
-.name
-    font-size: 40px
-    font-family: AnotherDanger, serif
-.navLinks
-    display: flex
-    align-items: center
-.navLinks a
-    font-size: 18px
-    margin: 0 7px
-.aboutMe
-    margin-top: 50px
-    display: flex
-.imageWrapper
     position: relative
-    width: 53%
-.aboutMe
-    &_container
-        width: 47%
-    &_label
-        display: flex
-        align-items: center
-        font-size: 30px
-        white-space: nowrap
-    &_line
-        height: 2px
-        margin-left: 10px
-        width: 100%
-        background-color: black
-    &_title
-        font-weight: 300
-        font-size: 30px
-    &_style
-        font-weight: 300
-        font-size: 30px
-    &_text
-        margin: 6vw 0
-        font-family: 'CormorantGaramond-Light', sans-serif
-        font-size: 4.7vw
-.inst
-    display: flex
-    align-items: center
-    font-size: 22px
-.myWorks
-    margin-top: 200px
-    &_title
-        width: 100%
-        text-align: center
-        font-size: 20px
-        font-style: italic
-    &_images
-        margin-top: 100px
-        display: grid
-        grid-template-columns: repeat(2, calc((100% - 3vw) / 2))
-        gap: 3vw
-    &_image
-        width: 100%
-        height: auto
-.myLocation
-    margin-top: 110px
-    display: flex
-    flex-direction: column
-    align-items: center
-    &_label
-        font-style: italic
-        font-size: 25px
-    &_text
+    padding: 0 60px
+    .aboutMe
         margin-top: 50px
-        font-size: 70px
-    &_map
-        margin-top: 80px
+        display: flex
+        &_container
+            width: 47%
+        &_label
+            display: flex
+            align-items: center
+            font-size: 30px
+            white-space: nowrap
+        &_line
+            height: 2px
+            margin-left: 4px
+            width: 100%
+            background-color: black
+        &_title
+            font-weight: 300
+            font-size: 30px
+        &_style
+            font-weight: 300
+            font-size: 30px
+        &_text
+            margin: 6vw 0
+            font-family: 'CormorantGaramond-Light', sans-serif
+            font-size: 4.7vw
+        .imageWrapper
+            position: relative
+            width: 53%
+    .myWorks
+        margin-top: 200px
+        &_title
+            width: 100%
+            text-align: center
+            font-size: 20px
+            font-style: italic
+        &_images
+            margin-top: 100px
+            display: grid
+            grid-template-columns: repeat(2, calc((100% - 3vw) / 2))
+            grid-template-rows: repeat(2, 1fr)
+            gap: 3vw
+            grid-auto-rows: 40vw
+        &_image
+            width: 100%
+            height: auto
+            &_spec
+                height: 100%
+                width: auto
+        &_imageWrapper
+            display: flex
+            justify-content: center
+            &_spec
+                display: flex
+                justify-content: center
+                grid-column: 1/3
+    .myLocation
+        margin-top: 110px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_label
+            font-style: italic
+            font-size: 25px
+        &_text
+            margin-top: 50px
+            font-size: 70px
+        &_map
+            margin-top: 80px
+.footer
+    padding: 20px 40px
+    width: 100%
+    margin-top: 100px
+    background-color: #302c2c
+    &_feedBack
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_title
+            line-height: 24px
+            font-size: 20px
+            justify-content: center
+            color: white
+        .formWrapper
+            color: white
+            flex-grow: 1
+            display: flex
+            justify-content: center
 
 @media (max-width: 1200px)
+    .container
+        .myWorks
+            margin-top: 150px
 
 @media (max-width: 992px)
+    .container
+        .myWorks
+            margin-top: 100px
+        .myLocation
+            &_text
+                margin-top: 30px
+                font-size: 50px
 
 @media (max-width: 768px)
+    .container
+        padding: 0 30px
+        .myWorks
+            margin-top: 50px
+            &_images
+                display: flex
+                align-items: center
+                flex-direction: column
+                margin-top: 50px
+            &_imageWrapper
+                width: 100%
+            &_image
+                width: 90%
+                &_spec
+                    width: 60%
+        .myLocation
+            margin-top: 50px
+            &_label
+                font-size: 25px
+            &_text
+                margin-top: 30px
+                font-size: 40px
+    .footer
+        margin-top: 50px
 
 @media (max-width: 576px)
+    .container
+        padding: 0 10px
+        .aboutMe
+            margin-top: 30px
+            flex-direction: column
+            align-items: center
+            &_container
+                width: 80%
+            &_label
+                font-size: 25px
+            &_text
+                font-size: 5.5vw
+            .imageWrapper
+                width: 100%
+                height: 350px
+            &_container
+                   margin-top: 30px
+    .footer
+        &_feedBack
+            flex-direction: column
+
+
+
+
 
 
 

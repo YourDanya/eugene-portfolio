@@ -1,9 +1,18 @@
+@font-face {
+  font-family: 'AnotherDanger';
+  src: url(../public/AnotherDanger.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-Light';
+  src: url(../public/CormorantGaramond-Light.ttf) format('truetype');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #e8e4dc;
 }
 
 a {
@@ -11,6 +20,17 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.aboutMe_img{
+  display: none;
 }

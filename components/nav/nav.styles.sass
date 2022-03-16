@@ -1,0 +1,88 @@
+.nav
+  padding: 10px
+  height: 80px
+  top: 0
+  line-height: normal
+  background-color: #e8e4dc
+  position: sticky
+  z-index: 100
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .name
+    font-size: 40px
+    font-family: AnotherDanger, serif
+  .navLinks
+    display: flex
+    align-items: center
+    a
+      font-size: 18px
+      margin: 0 7px
+    .inst
+      display: flex
+      align-items: center
+      font-size: 22px
+  .hamburger
+    display: none
+.hidden
+  top: -80px
+
+
+@media (max-width: 576px)
+  .nav
+    padding: 0 10px
+    height: 60px
+    .name
+      font-size: 35px
+    .navLinks
+      z-index: -100
+      visibility: hidden
+      opacity: 0
+      transition: 0.9s all
+      background-color: #e8e4dc
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: fixed
+      bottom: 0
+      left: 0
+      width: 100vw
+      height: calc(100vh - 60px)
+      a
+        transition: 0.3s all
+        transform: translateY(100vh)
+        font-size: 30px
+      .inst
+        font-size: 30px
+    .navLinksActive
+      visibility: visible
+      z-index: 100
+      display: flex
+      opacity: 1
+      a
+        transition: 0.9s all
+        transform: translateY(0)
+        margin: 20px
+    .hamburger
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 40px
+      height: 20px
+      &_line
+        transition: 0.6s all
+        background-color: black
+        width: 100%
+        height: 1px
+    .hamburgerActive
+      display: flex
+      .hamburger_line
+        &:nth-child(1)
+          transform: translateY(9px) rotate(-45deg)
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: translateY(-9px) rotate(45deg)
+
+

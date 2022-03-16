@@ -1,0 +1,28 @@
+.footer
+  padding: 40px
+  width: 100%
+  margin-top: 100px
+  background-color: #302c2c
+  &_feedBack
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_title
+      line-height: 24px
+      font-size: 20px
+      justify-content: center
+      color: white
+    .formWrapper
+      color: white
+      flex-grow: 1
+      display: flex
+      justify-content: center
+
+@media (max-width: 768px)
+  .footer
+    margin-top: 50px
+
+@media (max-width: 576px)
+  .footer
+    &_feedBack
+      flex-direction: column
