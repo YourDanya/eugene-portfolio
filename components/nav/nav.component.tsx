@@ -37,7 +37,9 @@ const Nav: React.FC = () => {
     }
 
     return (
-        <nav className={`nav ${show ? '' : 'hidden'}`}>
+        <nav className={`nav ${show ? '' : 'hidden'}
+            ${hamburgerActive? 'active' : '' }
+        `}>
             <p className={'name'}>Eugene Suhanov</p>
             <div className={`navLinks ${hamburgerActive ? 'navLinksActive' : ''}`}>
                 <Link href="/">

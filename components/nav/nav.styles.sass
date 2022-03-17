@@ -37,18 +37,18 @@
       z-index: 200
       font-size: 35px
     .navLinks
-      z-index: -100
+      visibility: hidden
       opacity: 0
       transition: 0.9s all
       background-color: #e8e4dc
       flex-direction: column
       justify-content: center
-      align-items: center
+      //align-items: center
       position: fixed
       bottom: 0
       left: 0
-      width: 100vw
-      height: 100vh
+      width: 100%
+      height: 100%
       a
         transition: 0.3s all
         transform: translateY(100vh)
@@ -57,6 +57,7 @@
         font-size: 30px
     .navLinksActive
       z-index: 100
+      visibility: unset
       display: flex
       opacity: 1
       a
@@ -84,5 +85,9 @@
           display: none
         &:nth-child(3)
           transform: translateY(-9px) rotate(45deg)
-
+  .active
+    position: fixed
+    top: 0
+    left: 0
+    padding: 0 20px
 
