@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className={styles.myLocation}>
                     <p className={styles.myLocation_label}>Current Location</p>
-                    <p className={styles.myLocation_text}>Marfa, Texas</p>
+                    <p className={styles.myLocation_text}>Whitby, Ontario</p>
                     <MyMap/>
                 </div>
             </main>

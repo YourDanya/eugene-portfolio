@@ -9,7 +9,7 @@ const About: NextPage = () => {
                 <div className="page_label">About</div>
                 <div className="page_line"/>
             </div>
-            <div className="about_title">From Los Angeles, CA. At home everywhere.</div>
+            <div className="about_title">From Toronto, Ontario. At home everywhere.</div>
             <div className="about_text">
                 I grew up in many different countries, which gave me access to an array
                 of unique and beautiful landscapes. In these settings, nature inspired me greatly.
@@ -20,7 +20,7 @@ const About: NextPage = () => {
                 <br/><br/>
                 Today, I am a freelance artist located in Toronto, Ontario, Canada.
                 If you would like to work together, or you are interested in commissioning work,
-                I am available by email at eugenes16@hotmail.com
+                I am available by email at <span style={{fontStyle: 'italic'}}>eugenes16@hotmail.com</span>
             </div>
             <div className="page_line">
 

@@ -8,6 +8,11 @@
   src: url(../public/CormorantGaramond-Light.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'AngelesPersonal';
+  src: url(../public/AngelesPersonalUseItalic-2Odz8.ttf) format('truetype');
+}
+
 html,
 body {
   padding: 0;

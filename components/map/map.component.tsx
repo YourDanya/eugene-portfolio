@@ -5,9 +5,9 @@ import {Feature, FeatureCollection, GeoJsonProperties, Geometry} from "geojson"
 const MyMap = () => {
 
     let [viewport, setViewport] = useState<ViewState | Object>({
-        latitude: 37.7577,
-        longitude: -122.4376,
-        zoom: 8,
+        latitude: 43.8975,
+        longitude: -78.9429,
+        zoom: 10,
     })
 
     const geojson: string | Feature<Geometry, GeoJsonProperties> | FeatureCollection<Geometry, GeoJsonProperties> | undefined = {
@@ -18,7 +18,7 @@ const MyMap = () => {
                 geometry:
                     {
                         type: 'Point',
-                        coordinates: [-122.4, 37.8]
+                        coordinates: [-78.9429, 43.8975]
                     },
                 properties: {}
             }
