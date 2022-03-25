@@ -19,7 +19,7 @@ const MyForm: React.FC = () => {
         event.preventDefault()
         try {
             const res = await axios({
-                url: 'http://localhost:3000/api/hello',
+                url: 'https://eugene-portfolio.vercel.app/api/hello',
                 method: 'POST',
                 data: values
             })
