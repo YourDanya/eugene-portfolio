@@ -1,23 +1,22 @@
 import React, {useEffect, useState,} from 'react'
 import {AiOutlineInstagram} from "react-icons/ai";
 import Link from "next/link";
+import {useRef} from 'react'
 
 const Nav: React.FC = () => {
 
     const [show, setShow] = useState(true)
-    const [lastScrollY, setLastScrollY] = useState(0)
     const [hamburgerActive, setActive] = useState(false)
+    const lastScrollYRef = useRef(0)
 
     const handleNav = () => {
-        console.log('last scroll', lastScrollY)
-        console.log('window scroll', window.scrollY)
         if (!hamburgerActive) {
-            if (window.scrollY > lastScrollY) {
+            if (window.scrollY > lastScrollYRef.current && show) {
                 setShow(false);
-            } else {
+            } else if (window.scrollY <= lastScrollYRef.current && !show){
                 setShow(true);
             }
-            setLastScrollY(window.scrollY);
+            lastScrollYRef.current = window.scrollY
         }
     }
 
@@ -30,7 +29,7 @@ const Nav: React.FC = () => {
                 window.removeEventListener('scroll', handleNav);
             };
         }
-    }, [lastScrollY, hamburgerActive]);
+    }, [show, hamburgerActive]);
 
     const handleClick = () => {
         setActive(!hamburgerActive)
